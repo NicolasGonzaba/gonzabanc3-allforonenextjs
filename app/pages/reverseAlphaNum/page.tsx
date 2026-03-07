@@ -10,7 +10,7 @@ const ReverseAlphaNumPage = () => {
     const handleSubmit = async () => {
         console.log(alphaNum)
         if (alphaNum === "" || alphaNum === " ") {
-            setResult("Please enter your name and time")
+            setResult("An input of multiple characters")
         }else
         setResult(await fetchReverseAlpha(alphaNum))
 

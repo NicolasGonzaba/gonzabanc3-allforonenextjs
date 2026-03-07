@@ -11,7 +11,7 @@ const AskingQuestionsPage = () => {
     const handleSubmit = async () => {
         console.log(name)
         console.log(time)
-        if (name === "" || name === " " || time===" "|| time===" ") {
+        if (name === "" || name === " " || time===""|| time===" ") {
             setResult("Please enter your name and time")
         }else
         setResult(await fetchAsk(name, time))

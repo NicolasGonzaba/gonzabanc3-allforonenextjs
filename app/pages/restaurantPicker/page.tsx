@@ -10,7 +10,7 @@ const RestaurantPickerPage = () => {
     const handleSubmit = async () => {
         console.log(pick)
         if (pick === "" || pick === " ") {
-            setResult("Please enter your name and time")
+            setResult("Please enter 'Mexican', 'Pizza', or 'Fast Food'")
         }else
         setResult(await fetchRestaurant(pick))
     }

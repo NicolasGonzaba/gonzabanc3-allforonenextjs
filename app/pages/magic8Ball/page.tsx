@@ -9,6 +9,9 @@ const Magic8BallPage = () => {
 
     const handleSubmit = async () => {
         console.log(question)
+        if (question === "" || question === " ") {
+            setResult("Please ask a question.")
+        }else
         setResult(await fetchMagic(question))
 
     }
